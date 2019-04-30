@@ -80,17 +80,13 @@ body {
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-/* Grid */
+/* mobile first layout */
 .grid {
 	display: grid;
-	grid-template-columns: 300px auto;
-	grid-template-rows: auto 150px;
-	grid-gap: 0;
+	grid-template-rows: 220px auto 100px;
 	width:100vw;
 	height: 100vh;
 }
-
-/* mobile first layout */
 header,
 article,
 footer {
@@ -105,11 +101,8 @@ header {
 	color: #fff;
 	font-weight:700;
 }
-header, footer {
-	padding: 2em 1em;
-}
-article {
-	padding:1em 1em 3em 1em;
+header, footer, article {
+	padding: 1em;
 }
 header h1 {
 	font-size: 2em;
@@ -131,6 +124,10 @@ a:hover, a:focus {
 /* media queries for larger screen sizes */
 
 @media all and (min-width: 700px) {
+	.grid {
+		grid-template-columns: 300px auto;
+		grid-template-rows: auto 150px;
+	}
 	header {
 		grid-column: 1/2;
 		grid-row: 1/3;
