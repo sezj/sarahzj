@@ -15,12 +15,12 @@ html {
  */
 
 ::-moz-selection {
-	 background: #b3d4fc;
+	 background: #b8d4e3;
 	 text-shadow: none;
 }
 
 ::selection {
-	 background: #b3d4fc;
+	 background: #b8d4e3;
 	 text-shadow: none;
 }
 
