@@ -79,6 +79,17 @@ body {
 	color:#2c302e;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
+body::after {
+	content: "";
+	background: url(../img/bodybg.png);
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
 
 /* mobile first layout */
 .grid {
@@ -105,12 +116,13 @@ header, footer, article {
 }
 header h1 {
 	font-size: 3em;	
-	/*font-size:5em;*/
 	line-height:1em;
 	text-transform: uppercase;
 	color: #346F74;
 	/*color: #FFFFFF;*/
 	font-weight:700;
+	margin:0;
+	padding:0;
 	text-shadow: 
 		0px 0px #002326, -1px 1px #002326, -2px 2px #002326, -3px 3px #002326, -4px 4px #002326, -5px 5px #002326, 
 		-6px 6px #002326, -7px 7px #002326, -8px 8px #002326, -9px 9px #002326, -10px 10px #002326, 
@@ -151,7 +163,7 @@ a:hover, a:focus {
 
 @media all and (min-width: 700px) {
 	.grid {
-		grid-template-columns: 300px auto;
+		grid-template-columns: 400px auto;
 		grid-template-rows: auto 150px;
 	}
 	header {
@@ -161,6 +173,7 @@ a:hover, a:focus {
 	header h1 {
 		font-size:5em;
 		line-height:1em;
+		margin: 10px 0 0 30px;
 	}
 	footer, article {
 		grid-column: 2/3;
