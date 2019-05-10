@@ -80,7 +80,7 @@ body {
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 body::after {
-	content: "";
+/*	content: "";
 	background: url(../img/bodybg.png);
 	opacity: 0.2;
 	top: 0;
@@ -88,7 +88,7 @@ body::after {
 	bottom: 0;
 	right: 0;
 	position: absolute;
-	z-index: -1;   
+	z-index: -1; */  
 }
 
 /* mobile first layout */
