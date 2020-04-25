@@ -382,7 +382,7 @@ a:hover, a:focus {
 }
 
 .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 440px;
 }
 
 .menu-btn:checked ~ .menu-icon .navicon {
