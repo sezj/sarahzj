@@ -114,9 +114,6 @@ header {
 	background: #346F74;
 	overflow: hidden;
 }
-header, .primary-nav{
-	/*position: fixed;*/
-}
 header, main {
 	padding: 1em 2em 1em 1em;
 }
@@ -326,10 +323,7 @@ a:hover, a:focus {
   top: 0;
 }
 
-/* 48em = 768px */
-
-/*@media (min-width: 48em) {*/
-
+/* nav menu at larger screen sizes */
 @media all and (min-width: 700px) {
 	.grid {
 		/*grid-template-rows: 220px 100px auto 100px;*/
