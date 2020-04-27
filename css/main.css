@@ -2,6 +2,7 @@ html {
 	 color: #222;
 	 font-size: 1em;
 	 line-height: 1.4;
+	 scroll-behavior: smooth;
 }
 
 /*
@@ -79,6 +80,7 @@ body {
 	color:#2c302e;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	z-index: -1;   
+	 scroll-behavior: smooth;
 }
 /*body::after {
 	content: "";
@@ -98,6 +100,7 @@ body {
 	display: grid;
 	width:100vw;
 	height: 100vh;
+
 }
 header,
 .primary-nav,
@@ -157,12 +160,21 @@ article p {
 a {
 	color: #2c302e;
 	text-decoration: none;
-	border-bottom: 1px solid rgba(52,111,116,1);
 	transition: all 0.3s ease;
 }
-a:hover, a:focus {
+header a:focus {
+	border:1px dotted #b8d4e3;
+}
+main a {
+	border:1px solid #b8d4e3;
+	border-bottom: 1px solid rgba(52,111,116,1);
+}
+main a:hover {
 	color:#346F74;
 	border-color: transparent;
+}
+main a:focus {
+	border: 1px solid rgba(52,111,116,1);
 }
 /* nav menu */
 .primary-nav ul {
@@ -181,20 +193,14 @@ a:hover, a:focus {
 .primary-nav li a {
   display: block;
   padding: 20px 20px;
-  /*color: #b8d4e3;*/
-  /*border-right: 1px solid #f4f4f4;*/
   text-decoration: none;
 }
 
 .primary-nav li a:hover,
 .primary-nav li a:focus,
 .menu-btn:hover,
-.menu-btn:focus {
-  /*background-color: #124C51;*/
+.menu-btn:focus {	
 	background-color: #f4f4f4;
-/*  border-top: 1px solid #f4f4f4;
-  border-bottom: 1px solid #f4f4f4;*/
-  /*text-decoration: underline;*/
 }
 
 /* menu */
@@ -275,14 +281,22 @@ a:hover, a:focus {
 		color: #b8d4e3;
 		border-top: 1px solid #346F74;
 		border-bottom: 1px solid #346F74;
+		text-shadow:none;
 	}
 	.primary-nav li a:hover,
 	.primary-nav li a:focus,
 	.menu-btn:hover,
 	.menu-btn:focus {
-		border-top: 1px solid #f4f4f4;
+	/*	border-top: 1px solid #f4f4f4;
 		border-bottom: 1px solid #f4f4f4;
-		background: transparent;
+		background: transparent;*/
+		
+	background-color: rgba(244,244,244,0.5);
+	color: #346F74;
+	transform: translateX(5px);
+	/*background: transparent;*/
+	text-shadow: 
+		0px 0px #002326, -1px 1px #002326, -2px 2px #002326, -3px 3px #002326, -4px 4px #002326, -5px 5px #002326;
 	}
 	.primary-nav .menu {
 		clear: none;
