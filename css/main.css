@@ -51,6 +51,7 @@ img,
 svg,
 video {
 	 vertical-align: middle;
+	 max-width: 100%;
 }
 
 /*
@@ -75,12 +76,15 @@ textarea {
 	Author's custom styles
 	========================================================================== */
 
+/* mobile first layout */
+
 body {
 	background-color: #b8d4e3;
 	color:#2c302e;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	z-index: -1;   
-	 scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	display: grid;
 }
 /*body::after {
 	content: "";
@@ -94,12 +98,12 @@ body {
 	z-index: -1;   
 }*/
 
-/* mobile first layout */
+
 
 /*.grid {*/
 body{
-	display: grid;
-	width:100vw;
+/*	display: grid;
+	width:100vw;*/
 	/*height: 100vh;*/
 	/*height:100%;*/
 
@@ -156,7 +160,7 @@ header h1 {
 		-91px 91px #b8d4e3, -92px 92px #b8d4e3, -93px 93px #b8d4e3, -94px 94px #b8d4e3, -95px 95px #b8d4e3, 
 		-96px 96px #b8d4e3, -97px 97px #b8d4e3, -98px 98px #b8d4e3, -99px 99px #b8d4e3, -100px 100px #b8d4e3;
 }
-article p {
+main p {
 	font-size:1.25em;
 }
 a {
@@ -188,7 +192,6 @@ main a:focus {
 	position:relative;
 	z-index:3;
 	text-transform: uppercase;
-	/*color: #b8d4e3;*/
 	font-weight: bold;
 }
 
@@ -277,9 +280,6 @@ main a:focus {
 		position:sticky;
 		top:0;
 	}
-	.primary-nav li {
-		/*float: left;*/
-	}
 	.primary-nav li a {
 		padding: 20px 30px;
 		color: #b8d4e3;
@@ -304,7 +304,6 @@ main a:focus {
 	}
 	.primary-nav .menu {
 		clear: none;
-		/*float: right;*/
 		max-height: none;
 	}
 	.menu-icon {
@@ -426,10 +425,9 @@ https://www.phpied.com/delay-loading-your-print-css/
 	 }
 
 	 /* grid layout */
-	 /*.grid {*/	body {
-
+	 /*.grid {*/	
+	 body {
 	 	display: block;
-
 	 }
 	 .primary-nav {
 	 	display:none;
