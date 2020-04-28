@@ -161,6 +161,15 @@ main a:focus {
 	border: 1px solid rgba(52,111,116,1);
 }
 /* nav menu */
+.primary-nav {
+	position:sticky;
+	top:0;
+	width:100vw;
+	background-color: #b8d4e3;
+	opacity:50%;
+
+	/*background-color: #56888D;*/
+}
 .primary-nav ul {
 	margin: 0;
 	padding: 0;
