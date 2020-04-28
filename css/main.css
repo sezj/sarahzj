@@ -96,10 +96,12 @@ body {
 
 /* mobile first layout */
 
-.grid {
+/*.grid {*/
+body{
 	display: grid;
 	width:100vw;
-	height: 100vh;
+	/*height: 100vh;*/
+	/*height:100%;*/
 
 }
 header,
@@ -272,6 +274,8 @@ main a:focus {
 		color: #b8d4e3;
 		background: transparent;
 		font-size: 3em;
+		position:sticky;
+		top:0;
 	}
 	.primary-nav li {
 		/*float: left;*/
@@ -311,10 +315,11 @@ main a:focus {
 /* general media query for larger screen sizes */
 
 @media all and (min-width: 700px) {
-	.grid {
+	/*.grid {*/
+	body {
 		display: grid;
-		grid-template-columns: 400px auto;
-		grid-template-rows: 400px auto;
+		grid-template-columns: 400px 1fr;
+		grid-template-rows: 400px 1fr;
 	}
 	header {
 		grid-column: 1/2;
@@ -421,7 +426,8 @@ https://www.phpied.com/delay-loading-your-print-css/
 	 }
 
 	 /* grid layout */
-	 .grid {
+	 /*.grid {*/	body {
+
 	 	display: block;
 
 	 }
