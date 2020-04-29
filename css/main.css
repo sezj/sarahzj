@@ -12,28 +12,25 @@ html {
  * Vendor-prefixed and regular ::selection selectors cannot be combined:
  * https://stackoverflow.com/a/16982510/7133471
  *
- * Customize the background color to match your design.
  */
 
 ::-moz-selection {
-	 background: #b8d4e3;
+	 background: #002326;
+	 color: #b8d4e3;
 	 text-shadow: none;
 }
 
 ::selection {
-	 background: #b8d4e3;
+	 background: #002326;
+	 color: #b8d4e3;
 	 text-shadow: none;
 }
-
-/*
- * A better looking default horizontal rule
- */
 
 hr {
 	 display: block;
 	 height: 1px;
 	 border: 0;
-	 border-top: 1px solid #ccc;
+	 border-top: 1px dotted #56888D;
 	 margin: 1em 0;
 	 padding: 0;
 }
@@ -71,10 +68,6 @@ fieldset {
 textarea {
 	 resize: vertical;
 }
-
- /* ==========================================================================
-	Author's custom styles
-	========================================================================== */
 
 /* mobile first layout */
 
@@ -193,7 +186,8 @@ h2 + h3 {
 	width:100%;
 	background-color: #346F74;
 }
-.primary-nav ul {
+/*.primary-nav ul {*/
+.primary-nav .menu {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -204,15 +198,16 @@ h2 + h3 {
 	text-transform: uppercase;
 	font-weight: bold;
 	background-color: #346F74;
+	clear: both;
+  	max-height: 0;
+  	transition: all .2s ease-out;
 }
-
 .primary-nav li a {
   display: block;
   padding: 20px 20px;
   text-decoration: none;
   color:#f4f4f4;
 }
-
 .primary-nav li a:hover,
 .primary-nav li a:focus,
 .menu-btn:hover,
@@ -222,11 +217,11 @@ h2 + h3 {
 }
 
 /* menu */
-.primary-nav .menu {
+/*.primary-nav .menu {
   clear: both;
   max-height: 0;
   transition: all .2s ease-out;
-}
+}*/
 
 /* create hamburger icon */
 .menu-icon {
@@ -288,12 +283,12 @@ h2 + h3 {
 }
 
 /* nav menu at larger screen sizes */
-/*@media all and (min-width: 700px) {*/
 @media all and (min-width: 768px) {
 	.primary-nav {
 		position:relative;
 	}
-	.primary-nav ul {
+	/*.primary-nav ul {*/
+	.primary-nav .menu {
 		margin: 0.5em;
 		width:auto;
 		color: #b8d4e3;
@@ -302,6 +297,8 @@ h2 + h3 {
 		overflow:visible;
 		position:sticky;
 		top:0;
+		clear: none;
+		max-height: none;
 	}
 	.primary-nav li a {
 		padding: 7px 30px 12px 30px;
@@ -318,21 +315,22 @@ h2 + h3 {
 	text-shadow: 
 		0px 0px #002326, -1px 1px #002326, -2px 2px #002326, -3px 3px #002326, -4px 4px #002326, -5px 5px #002326;
 	}
-	.primary-nav .menu {
+/*	.primary-nav .menu {
 		clear: none;
 		max-height: none;
-	}
+	}*/
 	.menu-icon {
 		display: none;
 	}
-	.primary-nav ul { {
+/*	.primary-nav ul { {
         position:fixed;
 		top:0;
-    }
+    }*/
 }
 
 @media all and (min-width: 1024px) {
-	.primary-nav ul {
+	/*.primary-nav ul {*/
+	.primary-nav .menu {
 		margin: 0 0.5em;
 		font-size: 3em;
 	}
@@ -346,7 +344,6 @@ h2 + h3 {
 /*@media all and (min-width: 700px) {*/
 @media all and (min-width: 768px) {
 	body {
-		/*display: grid;*/
 		grid-template-columns: 200px 1fr;
 		grid-template-rows: 200px 1fr;
 	}
@@ -387,7 +384,6 @@ h2 + h3 {
 	}
 }
  
-
 /* ==========================================================================
 Print styles.
 Inlined to avoid the additional HTTP request:
@@ -463,7 +459,6 @@ https://www.phpied.com/delay-loading-your-print-css/
 		  page-break-after: avoid;
 	 }
 
-	 /* grid layout */
 	 body {
 	 	display: block;
 	 }
@@ -473,6 +468,9 @@ https://www.phpied.com/delay-loading-your-print-css/
 	header, main {
 		padding:0;
 		margin:0;
+	}
+	header { 
+		min-height: 0;
 	}
 	header a {
 		border-bottom: none;
@@ -489,6 +487,19 @@ https://www.phpied.com/delay-loading-your-print-css/
 	}
 	main {
 		overflow-y: visible;
+	}
+	main h1 {
+		font-size: 2em;
+	} 
+	main h1:before {
+	    content: "";
+	    margin: 0;
+	}
+	main h2 {
+		font-size: 1.75em;
+	} 
+	main h3 {
+		font-size: 1.5em;
 	}
 	article p:first-child {
 		margin-top: 2em;
