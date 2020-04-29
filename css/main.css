@@ -160,6 +160,26 @@ main a:hover {
 main a:focus {
 	border: 1px solid rgba(52,111,116,1);
 }
+main h1 {
+	font-size: 2em;
+	margin:30px 0 0 0;
+	padding: 0;
+}
+/* scroll offset */
+main h1:before {
+	display: block;
+    content: "/////////////";
+    font-size: 0.75em;
+    color: #85ACB0;
+    margin: 0 0 30px 0;
+}
+main h2 {
+	
+}
+main h3 {
+	
+}
+
 /* nav menu */
 .primary-nav {
 	position:sticky;
@@ -199,7 +219,6 @@ main a:focus {
 .primary-nav .menu {
   clear: both;
   max-height: 0;
-  /*transition: max-height .2s ease-out;*/
   transition: all .2s ease-out;
 }
 
@@ -355,7 +374,6 @@ main a:focus {
 	}
 }
  
-
 
 /* ==========================================================================
 Print styles.
