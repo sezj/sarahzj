@@ -299,6 +299,7 @@ h2 + h3 {
 		color: #b8d4e3;
 		background: transparent;
 		font-size: 1.5em;
+		overflow:visible;
 		position:sticky;
 		top:0;
 	}
@@ -324,7 +325,12 @@ h2 + h3 {
 	.menu-icon {
 		display: none;
 	}
+	.primary-nav ul { {
+        position:fixed;
+		top:0;
+    }
 }
+
 @media all and (min-width: 1024px) {
 	.primary-nav ul {
 		margin: 0 0.5em;
