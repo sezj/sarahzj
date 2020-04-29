@@ -284,6 +284,9 @@ main h3 {
 /* nav menu at larger screen sizes */
 /*@media all and (min-width: 700px) {*/
 @media all and (min-width: 768px) {
+	.primary-nav {
+		position:relative;
+	}
 	.primary-nav ul {
 		margin: 0.5em;
 		width:auto;
@@ -296,8 +299,6 @@ main h3 {
 	.primary-nav li a {
 		padding: 7px 30px 12px 30px;
 		color: #b8d4e3;
-		/*border-top: 1px solid #346F74;
-		border-bottom: 1px solid #346F74;*/
 		text-shadow:none;
 	}
 	.primary-nav li a:hover,
