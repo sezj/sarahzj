@@ -161,23 +161,29 @@ main a:focus {
 	border: 1px solid rgba(52,111,116,1);
 }
 main h1 {
-	font-size: 2em;
-	margin:30px 0 0 0;
+	font-size: 3.25em;
+	margin:50px 0 0 0;
 	padding: 0;
 }
-/* scroll offset */
 main h1:before {
 	display: block;
     content: "/////////////";
-    font-size: 0.75em;
+    font-size: 0.5em;
     color: #85ACB0;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 }
 main h2 {
-	
+	font-size: 2em;
+	/*margin: 1em 0 0.25em 0;*/
 }
 main h3 {
-	
+	font-size:1.5em;
+	/*margin: 1em 0 0.25em 0;*/
+	text-transform: uppercase;
+	font-weight:normal;
+}
+h2 + h3 {
+	/*margin-top: -0.5em;*/
 }
 
 /* nav menu */
