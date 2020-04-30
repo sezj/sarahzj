@@ -1,6 +1,8 @@
 function retractMenu() {
-  document.getElementById("menu-btn").checked = false;
+	document.getElementById("menu-btn").checked = false;
 }
 window.onload = function() {
-  document.getElementById("main-content").addEventListener('click', retractMenu);
+	var mainContent = document.getElementById("main-content");
+	mainContent.addEventListener('click', retractMenu);
+	mainContent.addEventListener('touchstart', retractMenu);
 }
