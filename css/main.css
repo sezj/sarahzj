@@ -90,7 +90,7 @@ header {
 	justify-content: center;
 	background: #346F74;
 	overflow: hidden;
-	min-height: 225px;
+	min-height: 226px;
 }
 header, main {
 	padding: 1em 2em 1em 1em;
@@ -178,10 +178,10 @@ main h3 {
 .primary-nav {
 	position:sticky;
 	top:0;
+	margin-top:-1px;
 	width:100%;
 	background-color: #346F74;
 }
-/*.primary-nav ul {*/
 .primary-nav .menu {
 	margin: 0;
 	padding: 0;
@@ -210,13 +210,6 @@ main h3 {
 	background-color: #f4f4f4;
 	color:#2c302e;
 }
-
-/* menu */
-/*.primary-nav .menu {
-  clear: both;
-  max-height: 0;
-  transition: all .2s ease-out;
-}*/
 
 /* create hamburger icon */
 .menu-icon {
@@ -282,7 +275,6 @@ main h3 {
 	.primary-nav {
 		position:relative;
 	}
-	/*.primary-nav ul {*/
 	.primary-nav .menu {
 		margin: 0.5em;
 		width:auto;
@@ -310,21 +302,12 @@ main h3 {
 	text-shadow: 
 		0px 0px #002326, -1px 1px #002326, -2px 2px #002326, -3px 3px #002326, -4px 4px #002326, -5px 5px #002326;
 	}
-/*	.primary-nav .menu {
-		clear: none;
-		max-height: none;
-	}*/
 	.menu-icon {
 		display: none;
 	}
-/*	.primary-nav ul { {
-        position:fixed;
-		top:0;
-    }*/
 }
 
 @media all and (min-width: 1024px) {
-	/*.primary-nav ul {*/
 	.primary-nav .menu {
 		margin: 0 0.5em;
 		font-size: 3em;
@@ -336,7 +319,6 @@ main h3 {
 
 /* general media queries for larger screen sizes */
 
-/*@media all and (min-width: 700px) {*/
 @media all and (min-width: 768px) {
 	body {
 		grid-template-columns: 200px 1fr;

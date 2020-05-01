@@ -1,4 +1,5 @@
-function retractMenu() {
+function retractMenu(event) {
+	event.stopPropagation();
 	document.getElementById("menu-btn").checked = false;
 }
 window.onload = function() {
