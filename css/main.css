@@ -31,7 +31,7 @@ hr {
 	 height: 1px;
 	 border: 0;
 	 border-top: 1px dotted #56888D;
-	 margin: 1em 0;
+	 margin: 1.5em 0;
 	 padding: 0;
 }
 
@@ -69,8 +69,16 @@ textarea {
 	 resize: vertical;
 }
 
-/* mobile first layout */
+/* override default figure margins */
+figure {
+	margin:1em 0;
+}
+figcaption {
+	margin:0.25em;
+	font-size:1em;
+}
 
+/* mobile first layout */
 body {
 	background-color: #b8d4e3;
 	color:#2c302e;
@@ -100,6 +108,9 @@ main {
 }
 main footer {
 	padding-top: 1em;
+}
+main footer p {
+	font-size: 1em;
 }
 header h1 {
 	font-size: 3em;	
@@ -133,6 +144,7 @@ header h1 {
 }
 main p {
 	font-size:1.25em;
+	line-height:1.5em;
 }
 a {
 	color: #2c302e;
@@ -166,12 +178,14 @@ article h1:first-child:before {
     margin: 0 0 20px 0;
 }
 main h2 {
-	font-size: 2em;
-}
-main h3 {
-	font-size:1.5em;
+	font-size: 1.75em;
 	text-transform: uppercase;
 	font-weight:normal;
+}
+main h3 {
+	font-size:1.25em;
+}
+.content-img {
 }
 
 /* nav menu */
@@ -348,6 +362,16 @@ main h3 {
 	}
 	article p:first-child {
 		margin-top: 3em;
+	}
+	article:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	figure {
+		width:40%;
+		float:right;
+		margin:1em 3em;
 	}
 }
 
