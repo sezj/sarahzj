@@ -72,12 +72,14 @@ textarea {
 /* override default figure margins */
 figure {
 	margin:1em 0;
+	float:none;
+	width:80%;
 }
 figcaption {
 	margin:.25em;
 	font-size:1em;
 }
-figcaption.button {
+figcaption.has-button {
 	margin:1em 0;
 	text-align: center;	
 }
@@ -124,6 +126,7 @@ header h1 {
 	font-weight:700;
 	margin:0;
 	padding:0;
+	/* bluegreens only */
 	/*text-shadow: 
 		0px 0px #002326, -1px 1px #002326, -2px 2px #002326, -3px 3px #002326, -4px 4px #002326, -5px 5px #002326, 
 		-6px 6px #002326, -7px 7px #002326, -8px 8px #002326, -9px 9px #002326, -10px 10px #002326, 
@@ -145,6 +148,7 @@ header h1 {
 		-86px 86px #b8d4e3, -87px 87px #b8d4e3, -88px 88px #b8d4e3, -89px 89px #b8d4e3, -90px 90px #b8d4e3, 
 		-91px 91px #b8d4e3, -92px 92px #b8d4e3, -93px 93px #b8d4e3, -94px 94px #b8d4e3, -95px 95px #b8d4e3, 
 		-96px 96px #b8d4e3, -97px 97px #b8d4e3, -98px 98px #b8d4e3, -99px 99px #b8d4e3, -100px 100px #b8d4e3;*/
+
 	/* with pink/purple */
 	text-shadow: 
 		0px 0px #002326, -1px 1px #002326, -2px 2px #002326, -3px 3px #002326, -4px 4px #002326, -5px 5px #002326, 
@@ -198,6 +202,7 @@ a.button {
 	padding: 5px 10px;
 	font-weight: bold;
 	text-transform: uppercase;
+	display: inline-block;
 }
 a.button:hover, a.button:focus {
 	background-color:#5D1675;
@@ -213,7 +218,8 @@ article h1:first-child:before {
 	display: block;
     content: "/////////////";
     font-size: 0.5em;
-    color: #85ACB0;
+    /*color: #85ACB0;*/
+    color: #CF273E;
     margin: 0 0 20px 0;
 }
 main h2 {
@@ -376,7 +382,13 @@ main h4 {
 }
 
 /* general media queries for larger screen sizes */
-
+@media all and (min-width: 500px) {
+	figure {
+		width:40%;
+		float:right;
+		margin:1em 3em;
+	}
+}
 @media all and (min-width: 768px) {
 	body {
 		grid-template-columns: 200px 1fr;
@@ -412,11 +424,11 @@ main h4 {
 		display: table;
 		clear: both;
 	}
-	figure {
+/*	figure {
 		width:40%;
 		float:right;
 		margin:1em 3em;
-	}
+	}*/
 }
 
 @media all and (min-width: 1024px) {
