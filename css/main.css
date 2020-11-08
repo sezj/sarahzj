@@ -74,7 +74,7 @@ figure {
 	margin:1em 0;
 }
 figcaption {
-	margin:0.25em;
+	margin:0.5em;
 	font-size:1em;
 }
 
@@ -120,7 +120,7 @@ header h1 {
 	font-weight:700;
 	margin:0;
 	padding:0;
-	text-shadow: 
+	/*text-shadow: 
 		0px 0px #002326, -1px 1px #002326, -2px 2px #002326, -3px 3px #002326, -4px 4px #002326, -5px 5px #002326, 
 		-6px 6px #002326, -7px 7px #002326, -8px 8px #002326, -9px 9px #002326, -10px 10px #002326, 
 		-11px 11px #002326, -12px 12px #002326, -13px 13px #002326, -14px 14px #002326, -15px 15px #002326, 
@@ -129,6 +129,28 @@ header h1 {
 		-26px 26px #124C51, -27px 27px #124C51, -28px 28px #124C51, -29px 29px #124C51, -30px 30px #124C51, 
 		-31px 31px #124C51, -32px 32px #124C51, -33px 33px #124C51, -34px 34px #124C51, -35px 35px #124C51, 
 		-36px 36px #124C51, -37px 37px #124C51, -38px 38px #124C51, -39px 39px #124C51, -40px 40px #124C51, 
+		-41px 41px #56888D, -42px 42px #56888D, -43px 43px #56888D, -44px 44px #56888D, -45px 45px #56888D, 
+		-46px 46px #56888D, -47px 47px #56888D, -48px 48px #56888D, -49px 49px #56888D, -50px 50px #56888D, 
+		-51px 51px #56888D, -52px 52px #56888D, -53px 53px #56888D, -54px 54px #56888D, -55px 55px #56888D,
+		-56px 56px #56888D, -57px 57px #56888D, -58px 58px #56888D, -59px 59px #56888D, -60px 60px #56888D, 
+		-61px 61px #85ACB0, -62px 62px #85ACB0, -63px 63px #85ACB0, -64px 64px #85ACB0, -65px 65px #85ACB0, 
+		-66px 66px #85ACB0, -67px 67px #85ACB0, -68px 68px #85ACB0, -69px 69px #85ACB0, -70px 70px #85ACB0, 
+		-71px 71px #85ACB0, -72px 72px #85ACB0, -73px 73px #85ACB0, -74px 74px #85ACB0, -75px 75px #85ACB0, 
+		-76px 76px #85ACB0, -77px 77px #85ACB0, -78px 78px #85ACB0, -79px 79px #85ACB0, -80px 80px #85ACB0, 
+		-81px 81px #b8d4e3, -82px 82px #b8d4e3, -83px 83px #b8d4e3, -84px 84px #b8d4e3, -85px 85px #b8d4e3, 
+		-86px 86px #b8d4e3, -87px 87px #b8d4e3, -88px 88px #b8d4e3, -89px 89px #b8d4e3, -90px 90px #b8d4e3, 
+		-91px 91px #b8d4e3, -92px 92px #b8d4e3, -93px 93px #b8d4e3, -94px 94px #b8d4e3, -95px 95px #b8d4e3, 
+		-96px 96px #b8d4e3, -97px 97px #b8d4e3, -98px 98px #b8d4e3, -99px 99px #b8d4e3, -100px 100px #b8d4e3;*/
+	/* with pink/purple */
+	text-shadow: 
+		0px 0px #002326, -1px 1px #002326, -2px 2px #002326, -3px 3px #002326, -4px 4px #002326, -5px 5px #002326, 
+		-6px 6px #002326, -7px 7px #002326, -8px 8px #002326, -9px 9px #002326, -10px 10px #002326, 
+		-11px 11px #002326, -12px 12px #002326, -13px 13px #002326, -14px 14px #002326, -15px 15px #002326, 
+		-16px 16px #002326, -17px 17px #002326, -18px 18px #002326, -19px 19px #002326, -20px 20px #002326, 
+		-21px 21px #C71674, -22px 22px #C71674, -23px 23px #C71674, -24px 24px #C71674, -25px 25px #C71674, 
+		-26px 26px #C71674, -27px 27px #C71674, -28px 28px #C71674, -29px 29px #C71674, -30px 30px #C71674, 
+		-31px 31px #C71674, -32px 32px #C71674, -33px 33px #C71674, -34px 34px #C71674, -35px 35px #C71674, 
+		-36px 36px #C71674, -37px 37px #C71674, -38px 38px #C71674, -39px 39px #C71674, -40px 40px #C71674, 
 		-41px 41px #56888D, -42px 42px #56888D, -43px 43px #56888D, -44px 44px #56888D, -45px 45px #56888D, 
 		-46px 46px #56888D, -47px 47px #56888D, -48px 48px #56888D, -49px 49px #56888D, -50px 50px #56888D, 
 		-51px 51px #56888D, -52px 52px #56888D, -53px 53px #56888D, -54px 54px #56888D, -55px 55px #56888D,
@@ -165,6 +187,22 @@ main a:hover {
 main a:focus {
 	border: 1px solid rgba(52,111,116,1);
 }
+a.button {
+	border: 3px solid #C71674;
+	background-color: #C71674;
+	color: #ffecf7;
+	padding: 5px 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+a.button:hover, a.button:focus {
+	background-color:#5D1675;
+	background-color: #003c51;
+	color:#ffecf7;
+}
+figcaption .button {
+	margin:0 -0.4em;
+}
 main h1 {
 	font-size: 3.25em;
 	margin:50px 0 0 0;
@@ -184,6 +222,10 @@ main h2 {
 }
 main h3 {
 	font-size:1.25em;
+}
+main h4 {
+	font-size:1em;
+	font-style: italic;
 }
 .content-img {
 }
