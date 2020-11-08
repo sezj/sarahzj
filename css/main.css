@@ -74,8 +74,12 @@ figure {
 	margin:1em 0;
 }
 figcaption {
-	margin:0.5em;
+	margin:.25em;
 	font-size:1em;
+}
+figcaption.button {
+	margin:1em 0;
+	text-align: center;	
 }
 
 /* mobile first layout */
@@ -199,9 +203,6 @@ a.button:hover, a.button:focus {
 	background-color:#5D1675;
 	background-color: #003c51;
 	color:#ffecf7;
-}
-figcaption .button {
-	margin:0 -0.4em;
 }
 main h1 {
 	font-size: 3.25em;
