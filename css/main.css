@@ -195,7 +195,7 @@ main a:hover {
 main a:focus {
 	border: 1px solid rgba(52,111,116,1);
 }
-a.button {
+/*a.button {
 	border: 3px solid #C71674;
 	background-color: #C71674;
 	color: #ffecf7;
@@ -208,7 +208,45 @@ a.button:hover, a.button:focus {
 	background-color:#5D1675;
 	background-color: #003c51;
 	color:#ffecf7;
+}*/
+.button {
+	border: 3px solid #C71674;
+	background-color: #C71674;
+	color: #ffecf7;
+	padding: 5px 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
 }
+.button:hover, .button:focus {
+	background-color: #003c51;
+	border-color: #003c51;
+	color:#ffecf7;
+	cursor: pointer;
+}
+.button:focus {
+	border-color: #C71674;
+}
+/* Forms */
+label {
+	display: block;
+	width: auto;
+	font-weight: bold;
+	margin:10px 0 5px;
+}
+input, textarea, select {
+	display: block;
+	margin:0;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #346F74;
+}
+input:focus, textarea:focus, select:focus {
+	border-color:#C71674;
+	border-width:3px;			
+}
+
+/* Headings */
 main h1 {
 	font-size: 3.25em;
 	margin:50px 0 0 0;
