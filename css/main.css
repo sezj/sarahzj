@@ -195,25 +195,12 @@ main a:hover {
 main a:focus {
 	border: 1px solid rgba(52,111,116,1);
 }
-/*a.button {
-	border: 3px solid #C71674;
-	background-color: #C71674;
-	color: #ffecf7;
-	padding: 5px 10px;
-	font-weight: bold;
-	text-transform: uppercase;
-	display: inline-block;
-}
-a.button:hover, a.button:focus {
-	background-color:#5D1675;
-	background-color: #003c51;
-	color:#ffecf7;
-}*/
 .button {
 	border: 3px solid #C71674;
 	background-color: #C71674;
 	color: #ffecf7;
 	padding: 5px 10px;
+	font-size:1.5em;
 	font-weight: bold;
 	text-transform: uppercase;
 	display: inline-block;
@@ -273,11 +260,10 @@ main h4 {
 	font-style: italic;
 }
 main blockquote {
-	font-size: 0.75em;
+	font-size:1em;
 	font-weight: bold;
 	color: #124C51;
 	margin-left:0;
-	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
 .content-img {
@@ -300,6 +286,7 @@ main blockquote {
 	width:100%;
 	z-index:3;
 	text-transform: uppercase;
+	font-size: 1.5em;
 	font-weight: bold;
 	background-color: #346F74;
 	clear: both;
@@ -389,7 +376,7 @@ main blockquote {
 		width:auto;
 		color: #b8d4e3;
 		background: transparent;
-		font-size: 1.5em;
+		/*font-size: 1.5em;*/
 		overflow:visible;
 		position:sticky;
 		top:0;
@@ -434,6 +421,9 @@ main blockquote {
 		float:right;
 		margin:1em 3em;
 	}
+	.button {
+		font-size:1em;
+	}
 }
 @media all and (min-width: 768px) {
 	body {
@@ -462,6 +452,10 @@ main blockquote {
 	header, main {
 		padding:2em 3em;
 	}
+	main blockquote {
+		font-size: 0.75em;
+		text-transform: uppercase;
+	}
 	article p:first-child {
 		margin-top: 3em;
 	}
@@ -470,11 +464,7 @@ main blockquote {
 		display: table;
 		clear: both;
 	}
-/*	figure {
-		width:40%;
-		float:right;
-		margin:1em 3em;
-	}*/
+
 }
 
 @media all and (min-width: 1024px) {
