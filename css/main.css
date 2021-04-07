@@ -115,9 +115,6 @@ main {
 main footer {
 	padding-top: 1em;
 }
-main footer p {
-	font-size: 1em;
-}
 header h1 {
 	font-size: 3em;	
 	line-height:1em;
@@ -283,8 +280,19 @@ main blockquote {
 	margin-left:0;
 	letter-spacing: 0.1em;
 }
-.content-img {
+.social-icon {
+	width:50px;
+	height:50px;
+	margin: 10px;
 }
+.social-links a {
+	border: 0px none;
+	border-bottom: 0px none;
+}
+.social-links a:hover, .social-links a:focus {
+	border: 0px none;
+}
+
 
 /* nav menu */
 .primary-nav {
@@ -481,6 +489,24 @@ main blockquote {
 		content: "";
 		display: table;
 		clear: both;
+	}
+	footer {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows:1fr;
+	}
+	footer p {
+		grid-column: 1;
+		font-size: 1em;
+	}
+	footer div.social-links {
+		grid-column: 2;
+		text-align:right;
+	}
+	.social-icon {
+		width:30px;
+		height:30px;
+		margin: 10px;
 	}
 
 }
