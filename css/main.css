@@ -221,7 +221,7 @@ main a:focus {
 	background-color: #C71674 !important;
 	color: #ffecf7 !important;
 	padding: 5px 10px !important;
-	font-size:1.5em !important;
+	/*font-size:1.5em !important;*/
 	font-weight: bold !important;
 }
 #mc_embed_signup .button:hover {
