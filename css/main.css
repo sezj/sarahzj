@@ -213,7 +213,7 @@ main a:focus {
 .button:focus, #mc_embed_signup .button:focus {
 	border-color: #C71674;
 }
-#mc_embed_signup .button {
+/*#mc_embed_signup .button {
 	border: 3px solid #C71674 !important;
 	background-color: #C71674 !important;
 	color: #ffecf7 !important;
@@ -227,7 +227,7 @@ main a:focus {
 	background-color: #003c51 !important;
 	border-color: #003c51 !important;
 	color:#ffecf7 !important;
-}
+}*/
 /* Forms */
 label {
 	display: block;
