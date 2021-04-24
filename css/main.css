@@ -192,7 +192,7 @@ main a:hover {
 main a:focus {
 	border: 1px solid rgba(52,111,116,1);
 }
-.button, #mc_embed_signup .button {
+.button {
 	border: 3px solid #C71674;
 	background-color: #C71674;
 	color: #ffecf7;
@@ -202,15 +202,13 @@ main a:focus {
 	text-transform: uppercase;
 	display: inline-block;
 }
-.button:hover, .button:focus,
-#mc_embed_signup .button:hover,
-#mc_embed_signup .button:focus {
+.button:hover, .button:focus {
 	background-color: #003c51;
 	border-color: #003c51;
 	color:#ffecf7;
 	cursor: pointer;
 }
-.button:focus, #mc_embed_signup .button:focus {
+.button:focus {
 	border-color: #C71674;
 }
 /* Forms */
