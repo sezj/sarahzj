@@ -31,13 +31,7 @@
 	<!-- Mailchimp form styles -->
 	<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
-		#mc-embedded-subscribe {
-			/*width: 40%;*/
-			margin-top: 20px;
-			padding:10px;
-			width: 70%;
-		}
-		.mc-field-group {
+		#mc_embed_signup .mc-field-group {
 			width: 95%;
 		}
 		#mc_embed_signup form {
@@ -52,7 +46,8 @@
 			font-weight: bold;
 			height: auto;
 			border-radius: 0px;
-			width:50%;
+			width:auto;
+			margin-top: 20px;
 		}
 		#mc_embed_signup .button:hover {
 			background-color: #003c51;
@@ -60,18 +55,12 @@
 			color:#ffecf7;
 		}
 		@media all and (min-width: 500px) {
-			#mc-embedded-subscribe {
-				width: 40%;
-			}
-			.mc-field-group {
+			#mc_embed_signup .mc-field-group {
 				width: 70%;
 			}
 		}
 		@media all and (min-width: 1024px) {
-			#mc-embedded-subscribe {
-				width: 25%;
-			}
-			.mc-field-group {
+			#mc_embed_signup .mc-field-group {
 				width: 50%;
 			}
 		}
