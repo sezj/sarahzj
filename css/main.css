@@ -169,9 +169,12 @@ header h1 {
 		-91px 91px #b8d4e3, -92px 92px #b8d4e3, -93px 93px #b8d4e3, -94px 94px #b8d4e3, -95px 95px #b8d4e3, 
 		-96px 96px #b8d4e3, -97px 97px #b8d4e3, -98px 98px #b8d4e3, -99px 99px #b8d4e3, -100px 100px #b8d4e3;
 }
-main p {
+main p, time {
 	font-size:1.25em;
 	line-height:1.5em;
+}
+time {
+	font-weight:bold;
 }
 a {
 	color: #2c302e;
