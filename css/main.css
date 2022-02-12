@@ -505,6 +505,7 @@ main blockquote {
 	}
 	footer div.social-links {
 		grid-column: 2;
+		padding-top:10px;
 	}
 	.social-icon {
 		width:30px;
