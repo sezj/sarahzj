@@ -269,11 +269,14 @@ main h4 {
 	font-style: italic;
 }
 main blockquote {
-	font-size:1em;
-	font-weight: bold;
-	color: #00404A;
+/*	font-size:1em;*/
+/*	font-weight: bold;*/
+	color: #2c302e;
 	margin-left:0;
-	letter-spacing: 0.1em;
+	font-style: italic;
+	font-size:1em;
+	line-height: 1.5em;
+/*	letter-spacing: 0.1em;*/
 }
 .social-icon {
 	width:50px;
@@ -474,8 +477,8 @@ main blockquote {
 		padding:2em 3em;
 	}
 	main blockquote {
-		font-size: 0.75em;
-		text-transform: uppercase;
+	/*	font-size: 0.75em;
+		text-transform: uppercase;*/
 	}
 	main ul {
 		margin:1em;
