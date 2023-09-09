@@ -88,7 +88,7 @@ figcaption.has-button {
 body {
 	background-color: #F6F6F4;
 	color:#2c302e;
-	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-family: 'Jost', sans-serif;
 	z-index: -1;   
 	scroll-behavior: smooth;
 	display: grid;
@@ -104,7 +104,7 @@ header {
 	justify-content: center;
 	background: #009EB9;
 	overflow: hidden;
-	min-height: 226px;
+/*	min-height: 226px;*/
 }
 header, main {
 	padding: 1em 2em 1em 1em;
@@ -119,8 +119,9 @@ header h1 {
 	font-size: 3em;	
 	line-height:1em;
 	text-transform: uppercase;
-	color: #009EB9;
-	font-weight:700;
+/*	color: #009EB9;*/
+	color: #2c302e;
+	font-weight:300;
 	margin:0;
 	padding:0;
 	/* bluegreens only */
@@ -147,7 +148,7 @@ header h1 {
 		-96px 96px #F6F6F4, -97px 97px #F6F6F4, -98px 98px #F6F6F4, -99px 99px #F6F6F4, -100px 100px #F6F6F4;*/
 
 	/* with red */
-	text-shadow: 
+	/*text-shadow: 
 		0px 0px #002326, -1px 1px #002326, -2px 2px #002326, -3px 3px #002326, -4px 4px #002326, -5px 5px #002326, 
 		-6px 6px #002326, -7px 7px #002326, -8px 8px #002326, -9px 9px #002326, -10px 10px #002326, 
 		-11px 11px #002326, -12px 12px #002326, -13px 13px #002326, -14px 14px #002326, -15px 15px #002326, 
@@ -167,7 +168,7 @@ header h1 {
 		-81px 81px #F6F6F4, -82px 82px #F6F6F4, -83px 83px #F6F6F4, -84px 84px #F6F6F4, -85px 85px #F6F6F4, 
 		-86px 86px #F6F6F4, -87px 87px #F6F6F4, -88px 88px #F6F6F4, -89px 89px #F6F6F4, -90px 90px #F6F6F4, 
 		-91px 91px #F6F6F4, -92px 92px #F6F6F4, -93px 93px #F6F6F4, -94px 94px #F6F6F4, -95px 95px #F6F6F4, 
-		-96px 96px #F6F6F4, -97px 97px #F6F6F4, -98px 98px #F6F6F4, -99px 99px #F6F6F4, -100px 100px #F6F6F4;
+		-96px 96px #F6F6F4, -97px 97px #F6F6F4, -98px 98px #F6F6F4, -99px 99px #F6F6F4, -100px 100px #F6F6F4;*/
 }
 main p, time {
 	font-size:1.25em;
@@ -311,7 +312,6 @@ main blockquote {
 	z-index:3;
 	text-transform: uppercase;
 	font-size: 1.5em;
-	font-weight: bold;
 	background-color: #009EB9;
 	clear: both;
   	max-height: 0;
@@ -451,8 +451,11 @@ main blockquote {
 }
 @media all and (min-width: 768px) {
 	body {
-		grid-template-columns: 200px 1fr;
+		grid-template-columns: 240px 1fr;
 		grid-template-rows: 200px 1fr;
+	}
+	body.excerpt {
+		grid-template-columns: 1fr;
 	}
 	header {
 		grid-column: 1/2;
@@ -461,7 +464,7 @@ main blockquote {
 	header h1 {
 		font-size:2em;
 		line-height:1em;
-		margin: 10px 0 0 30px;
+/*		margin: 10px 0 0 30px;*/
 	}
 	.primary-nav {
 		grid-column: 1/2;
@@ -475,10 +478,6 @@ main blockquote {
 	}
 	header, main {
 		padding:2em 3em;
-	}
-	main blockquote {
-	/*	font-size: 0.75em;
-		text-transform: uppercase;*/
 	}
 	main ul {
 		margin:1em;
@@ -519,10 +518,12 @@ main blockquote {
 }
 
 @media all and (min-width: 1024px) {
-/*@media all and (min-width: 1280px) {*/
 	body {
 		grid-template-columns: 400px 1fr;
 		grid-template-rows: 400px 1fr;
+	}
+	body.excerpt {
+		grid-template-columns: 10% 1fr 10%;
 	}
 	header h1 {
 		font-size:5em;
@@ -534,7 +535,10 @@ main blockquote {
 
 @media all and (min-width: 1280px) {
 	body {
-		grid-template-columns: 400px 880px 1fr;
+/*		grid-template-columns: 400px 1280px 1fr;*/
+	}
+	body.excerpt {
+		grid-template-columns: 15% 1fr 15%;
 	}
 }
  
