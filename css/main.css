@@ -15,13 +15,13 @@ html {
  */
 
 ::-moz-selection {
-	 background: #002326;
+	 background: #2A0F10;
 	 color: #F6F6F4;
 	 text-shadow: none;
 }
 
 ::selection {
-	 background: #002326;
+	 background: #2A0F10;
 	 color: #F6F6F4;
 	 text-shadow: none;
 }
@@ -86,8 +86,8 @@ figcaption.has-button {
 
 /* mobile first layout */
 body {
-	background-color: #F6F6F4;
-	color:#2c302e;
+	background-color: #E7E2DC;
+	color:#16070C;
 	font-family: 'Jost', sans-serif;
 	z-index: -1;   
 	scroll-behavior: smooth;
@@ -102,7 +102,7 @@ main {
 header {
 	display: flex;
 	justify-content: center;
-	background: #009EB9;
+	background: #08121A;
 	overflow: hidden;
 /*	min-height: 226px;*/
 }
@@ -119,8 +119,7 @@ header h1 {
 	font-size: 3em;	
 	line-height:1em;
 	text-transform: uppercase;
-/*	color: #009EB9;*/
-	color: #2c302e;
+	color: #F6F6F4;
 	font-weight:300;
 	margin:0;
 	padding:0;
@@ -187,7 +186,7 @@ time {
 	font-weight:bold;
 }
 a {
-	color: #2c302e;
+	color: #16070C;
 	text-decoration: none;
 	transition: all 0.3s ease;
 }
@@ -199,16 +198,16 @@ main a {
 	border-bottom: 1px solid rgba(52,111,116,1);
 }
 main a:hover {
-	color:#009EB9;
+	color:#511411;
 	border-color: transparent;
 }
 main a:focus {
 	border: 1px solid rgba(52,111,116,1);
 }
 .button {
-	border: 3px solid #DF2D21;
-	background-color: #DF2D21;
-	color: #ffecf7;
+	border: 3px solid #B03026;
+	background-color: #B03026;
+	color: #fff;
 	padding: 5px 10px;
 	font-size:1.5em;
 	font-weight: bold;
@@ -216,13 +215,13 @@ main a:focus {
 	display: inline-block;
 }
 .button:hover, .button:focus {
-	background-color: #009EB9;
-	border-color: #009EB9;
+	background-color: #08121A;
+	border-color: #08121A;
 	color:#ffecf7;
 	cursor: pointer;
 }
 .button:focus {
-	border-color: #DF2D21;
+	border-color: #08121A;
 }
 /* Forms */
 label {
@@ -236,7 +235,7 @@ input, textarea, select {
 	margin:0;
 	padding: 10px;
 	width: 100%;
-	border: 1px solid #009EB9;
+	border: 1px solid #B03026;
 }
 input:focus, textarea:focus, select:focus {
 	border-color:#DF2D21;
@@ -253,8 +252,7 @@ article h1:first-child:before {
 	display: block;
     content: "/////////////";
     font-size: 0.5em;
-    /*color: #8D9DB7;*/
-    color: #CF273E;
+    color: #B03026;
     margin: 0 0 20px 0;
 }
 main h2 {
@@ -272,10 +270,10 @@ main h4 {
 main blockquote {
 /*	font-size:1em;*/
 /*	font-weight: bold;*/
-	color: #2c302e;
+	color: #16070C;
 	margin-left:0;
 	font-style: italic;
-	font-size:1em;
+	font-size:1.2em;
 	line-height: 1.5em;
 /*	letter-spacing: 0.1em;*/
 }
@@ -300,7 +298,7 @@ main blockquote {
 	top:0;
 	margin-top:-1px;
 	width:100%;
-	background-color: #009EB9;
+	background-color: #08121A;
 }
 .primary-nav .menu {
 	margin: 0;
@@ -312,7 +310,7 @@ main blockquote {
 	z-index:3;
 	text-transform: uppercase;
 	font-size: 1.5em;
-	background-color: #009EB9;
+	background-color: #08121A;
 	clear: both;
   	max-height: 0;
   	transition: all .2s ease-out;
@@ -328,7 +326,7 @@ main blockquote {
 .menu-btn:hover,
 .menu-btn:focus {	
 	background-color: #f4f4f4;
-	color:#2c302e;
+	color:#08121A;
 }
 
 /* create hamburger icon */
@@ -407,7 +405,7 @@ main blockquote {
 		clear: none;
 		max-height: none;
 	}
-	.primary-nav li a {
+	.primary-nav li a {						f
 		padding: 7px 30px 12px 30px;
 /*		color: #F6F6F4;*/
 		text-shadow:none;
@@ -416,11 +414,8 @@ main blockquote {
 	.primary-nav li a:focus,
 	.menu-btn:hover,
 	.menu-btn:focus {
-	background-color: rgba(244,244,244,0.5);
-	color: #009EB9;
+	background-color: rgba(244,244,244,0.9);
 	transform: translateX(5px);
-	text-shadow: 
-		0px 0px #002326, -1px 1px #002326, -2px 2px #002326, -3px 3px #002326, -4px 4px #002326, -5px 5px #002326;
 	}
 	.menu-icon {
 		display: none;
@@ -464,12 +459,11 @@ main blockquote {
 	header h1 {
 		font-size:2em;
 		line-height:1em;
-/*		margin: 10px 0 0 30px;*/
 	}
 	.primary-nav {
 		grid-column: 1/2;
 		grid-row: 2/3;
-		background: #009EB9;
+		background: #08121A;
 	}
 	main {
 		grid-column: 2/3;
@@ -484,8 +478,8 @@ main blockquote {
 		padding: 0;
 	}
 	main ul li {
-		line-height: 2.0em;
-		font-size: 1em;
+		line-height: 2.25em;
+		font-size: 1.25em;
 		margin-bottom: 0px;
 	}
 	article p:first-child {
