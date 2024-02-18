@@ -86,7 +86,7 @@ figcaption.has-button {
 
 /* mobile first layout */
 body {
-	background-color: #E7E2DC;
+	background-color: #F6F6F4;
 	color:#16070C;
 	font-family: 'Jost', sans-serif;
 	z-index: -1;   
@@ -223,6 +223,28 @@ main a:focus {
 .button:focus {
 	border-color: #08121A;
 }
+.links .button {
+	width: 80%;
+	padding:1em 0.75em;
+	margin:0.5em;
+	display:inline-block;
+	border: 3px solid #08121A;
+	box-shadow: 5px 5px #08121A;
+}
+.links .button:hover, 
+.links .button:focus {
+	transform: translateX(5px);
+	box-shadow: 5px 5px #B03026;
+	
+}
+.round {
+	width: 150px;
+	height:150px;
+	object-fit: cover;
+	object-position: top;
+	border-radius:50%;
+
+}
 /* Forms */
 label {
 	display: block;
@@ -274,6 +296,12 @@ main blockquote {
 	line-height: 1.5em;
 	font-weight:100;
 }
+.links-header {
+	margin: 20px;
+}
+.links-footer {
+		text-align:center;
+	}
 .social-icon {
 	width:50px;
 	height:50px;
@@ -417,6 +445,7 @@ main blockquote {
 	.menu-icon {
 		display: none;
 	}
+
 }
 
 @media all and (min-width: 1024px) {
@@ -500,10 +529,17 @@ main blockquote {
 		grid-column: 2;
 		padding-top:10px;
 	}
+	.links-footer {
+		grid-template-columns: 1fr;
+	}
 	.social-icon {
 		width:30px;
 		height:30px;
 		margin: 10px;
+	}
+	.links {
+		width:80%;
+		margin:0 auto 3em auto;
 	}
 
 }
@@ -522,6 +558,7 @@ main blockquote {
 	figure {
 		/*width:20%;*/
 	}
+
 }
 
 @media all and (min-width: 1280px) {
@@ -530,6 +567,9 @@ main blockquote {
 	}
 	body.excerpt {
 		grid-template-columns: 15% 1fr 15%;
+	}
+	.links {
+		width:50%;
 	}
 }
  
