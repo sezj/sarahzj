@@ -169,7 +169,7 @@ header h1 {
 		-91px 91px #F6F6F4, -92px 92px #F6F6F4, -93px 93px #F6F6F4, -94px 94px #F6F6F4, -95px 95px #F6F6F4, 
 		-96px 96px #F6F6F4, -97px 97px #F6F6F4, -98px 98px #F6F6F4, -99px 99px #F6F6F4, -100px 100px #F6F6F4;*/
 }
-main p, time {
+main p, time, address {
 	font-size:1.25em;
 	line-height:1.5em;
 }
