@@ -279,6 +279,7 @@ article h1:first-child:before {
 }
 main h2 {
 	font-size: 1.75em;
+	margin-bottom:0.25em;
 	text-transform: uppercase;
 	font-weight:normal;
 }
